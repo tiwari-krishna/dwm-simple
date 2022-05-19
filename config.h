@@ -267,6 +267,9 @@ static Key keys[] = {
 //    { MODKEY|ShiftMask,             XK_n,               spawn,      SHCMD(TERMINAL " -e nvim $HOME/.cache/ScratchNote.md") },
     { MODKEY|ControlMask,           XK_x,               spawn,      SHCMD("slock") },
     { MODKEY,                       XK_c,               spawn,      SHCMD("galculator") },
+    { MODKEY|ControlMask,           XK_r,               spawn,      SHCMD("mpv --untimed --no-cache --no-osc --no-input-default-bindings --profile=low-latency --input-conf=/dev/null --title=webcam /dev/video0") },
+
+    { Mod1Mask,                     XK_w,               spawn,      SHCMD(TERMINAL " -e nmtui") },
     { MODKEY,                       XK_e,               spawn,      SHCMD("emacsclient -c || emacs") },
     { MODKEY,                       XK_d,               spawn,      SHCMD("clipgrab") },
     { MODKEY|ShiftMask,             XK_d,               spawn,      SHCMD("rofi -show drun") },
